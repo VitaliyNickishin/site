@@ -1,0 +1,9 @@
+#folder 
+node_modules/
+dist/
+#files
+.bowerrc
+package.json
+package-lock.json
+restaurant.psd
+gulpfile.js
