@@ -3,7 +3,7 @@ body
 	font-family: 'Sintony', sans-serif
  color: $body-text
 h1
-	font-family: 'Playfair Display SC', serif
+	font-family: 'Playfair Display', serif
 	font-weight: 700
 	color: $h-color
 .main-header //основная шапка меню
@@ -41,9 +41,9 @@ h1
 		//display: block
 		margin-right: 13px
 .offer //картинка головы
-	background: url(../img/first-bg.jpg) no-repeat center top
+	background: url(../img/first-bg.jpg) no-repeat center top //x-center, y-top
 .title //заголовок головы
-	padding: 220px 0 //за счет отступа задали размер картинки головы
+	padding: 215px 0 //за счет отступа задали размер картинки головы
 	&__heading //первая часть заголовка головы
 		@extend h1 //наследуем нужные св-ва у заголока
 		font-size: 56px //переопределяем шрифт
@@ -55,7 +55,30 @@ h1
 		margin-top: -15px
 		span
 			color: $button-bg //оранжевый
-		
+.call // секция для блока с контентом и телефоном
+ background: $call-bg //серый фон 
+ border-bottom: 1px solid #dde3e7
+ padding: 30px 0
+.phone // общий блок с контентом и телефоном
+	width: 455px //задали ширину, чтоб стал по центру
+	&__text // блок с контентом и иконкой
+		background: url(../img/phone.png) no-repeat left center  //иконка с телефоном x-left, y-center
+		color: $h-color
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 700
+		width: 180px //ширина 
+		padding: 5px 0 0 56px //отодвинулись от иконки и выравниваем
+		span //нижний текст
+			display: block //блочным чтоб сработал margin
+			color: $button-bg //оранжевый
+			font-size: 16px
+			margin-top: -4px //сократили интерльяж
+	&__digits // блок с телефоном
+  @extend h1 //наследуем нужные св-ва у заголока
+  font-size: 32px
+  color: $h-color
+  margin: -5px 0 0 42px // отодвигаем от блок с контентом и выравниваем
 
 		
 		
