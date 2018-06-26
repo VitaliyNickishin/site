@@ -2,10 +2,18 @@ body {
   font-family: 'Sintony', sans-serif;
   color: #5c6369; }
 
+h1, .title__heading, .title__desc {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 700;
+  color: #14141d; }
+
+.main-header {
+  padding: 24px 0; }
+
 .menu {
+  margin-top: 10px;
   display: block;
-  padding: 0;
-  margin: 0; }
+  padding: 0; }
   .menu__item {
     display: block;
     padding: 0;
@@ -15,3 +23,38 @@ body {
     .menu__item a {
       color: #2c465a;
       text-transform: uppercase; }
+
+.book {
+  background-color: #fea100;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 13px 0;
+  display: block;
+  width: 200px;
+  cursor: pointer;
+  border: 0;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-top: -5px; }
+  .book__icon {
+    background: url(../img/order.png);
+    width: 21px;
+    height: 17px;
+    margin-right: 13px; }
+
+.offer {
+  background: url(../img/first-bg.jpg) no-repeat center top; }
+
+.title {
+  padding: 220px 0; }
+  .title__heading {
+    font-size: 56px;
+    color: #fff; }
+  .title__desc {
+    font-size: 40px;
+    color: #fff;
+    margin-top: -15px; }
+    .title__desc span {
+      color: #fea100; }

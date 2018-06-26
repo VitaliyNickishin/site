@@ -1,19 +1,65 @@
+@import "colors"//интегрируем переменные с цветами
 body
-	font-family: 'Sintony', sans-serif;
- color:#5c6369
- //font-family: 'Playfair Display SC', serif;
-.menu
+	font-family: 'Sintony', sans-serif
+ color: $body-text
+h1
+	font-family: 'Playfair Display SC', serif
+	font-weight: 700
+	color: $h-color
+.main-header //основная шапка меню
+	padding: 24px 0
+.menu //контент меню
+	margin-top: 10px
 	display: block
 	padding: 0
-	margin: 0
-	&__item
+	&__item //элементы меню
 		display: block
 		padding: 0
 	 margin: 0
 		font-weight: 700
 		font-size: 14px
-	 a
-		 color:#2c465a
+	 a //меню ссылкой
+		 color: $menu-text
 		 text-transform: uppercase
+.book //кнопка
+	background-color: $button-bg
+	color: $white
+	font-size: 14px
+	font-weight: 700
+	text-transform: uppercase
+	padding: 13px 0
+	display: block
+	width: 200px
+	cursor: pointer
+	border: 0
+	border-radius: 5px
+	margin-top: -5px
+	&__icon //иконка с колокольчиком
+		background: url(../img/order.png)
+		width: 21px
+		height: 17px
+		//display: block
+		margin-right: 13px
+.offer //картинка головы
+	background: url(../img/first-bg.jpg) no-repeat center top
+.title //заголовок головы
+	padding: 220px 0 //за счет отступа задали размер картинки головы
+	&__heading //первая часть заголовка головы
+		@extend h1 //наследуем нужные св-ва у заголока
+		font-size: 56px //переопределяем шрифт
+		color: $white //переопределяем цвет
+	&__desc //вторая часть заголовка головы
+		@extend h1 //наследуем нужные св-ва у заголока
+		font-size: 40px //переопределяем шрифт
+		color: $white //переопределяем цвет
+		margin-top: -15px
+		span
+			color: $button-bg //оранжевый
+		
+
+		
+		
+
+
 	
  
