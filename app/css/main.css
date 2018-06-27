@@ -2,7 +2,7 @@ body {
   font-family: 'Sintony', sans-serif;
   color: #5c6369; }
 
-h1, .title__heading, .title__desc, .phone__digits, .history__title {
+h1, .title__heading, .title__desc, .phone__digits, .history__title, .special-title, .food__title {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #14141d; }
@@ -68,7 +68,7 @@ p {
 
 .call {
   background: #edf1f3;
-  border-bottom: 1px solid #dde3e7;
+  border-bottom: 1px solid #e1e1e1;
   padding: 30px 0; }
 
 .phone {
@@ -110,3 +110,45 @@ p {
 
 .food-images_down {
   margin-top: 50px; }
+
+.special {
+  background: url(../img/third-bg.jpg) no-repeat center top;
+  padding-top: 80px; }
+  .special-title {
+    font-size: 35px;
+    color: #fff;
+    text-align: center; }
+
+.food {
+  text-align: center;
+  -webkit-box-shadow: 0 20px 90px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 20px 90px rgba(0, 0, 0, 0.15);
+  margin: 20px 0 130px; }
+  .food__img {
+    margin-bottom: 45px; }
+  .food__title {
+    font-size: 26px;
+    margin-bottom: 10px; }
+  .food__desc {
+    font-size: 14px;
+    padding: 0 55px; }
+  .food__details {
+    border-top: 1px solid #e1e1e1;
+    text-align: left;
+    padding: 19px 0;
+    color: #14141d;
+    margin: 0 45px; }
+  .food__del {
+    text-transform: uppercase;
+    font-size: 13px;
+    width: 78px;
+    border-right: 1px solid #e1e1e1;
+    margin-right: 18px; }
+    .food__del span {
+      color: #fe4c8d; }
+  .food__phone {
+    font-size: 26px;
+    font-family: 'Playfair Display', serif; }
+  .food__price {
+    color: #fea100;
+    font-size: 30px; }
