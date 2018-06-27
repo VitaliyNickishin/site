@@ -2,10 +2,13 @@ body {
   font-family: 'Sintony', sans-serif;
   color: #5c6369; }
 
-h1, .title__heading, .title__desc, .phone__digits {
+h1, .title__heading, .title__desc, .phone__digits, .history__title {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #14141d; }
+
+p {
+  line-height: 1.8em; }
 
 .main-header {
   padding: 24px 0; }
@@ -24,7 +27,7 @@ h1, .title__heading, .title__desc, .phone__digits {
       color: #2c465a;
       text-transform: uppercase; }
 
-.book {
+.cta {
   background-color: #fea100;
   color: #fff;
   font-size: 14px;
@@ -37,8 +40,12 @@ h1, .title__heading, .title__desc, .phone__digits {
   border: 0;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  margin-top: -5px; }
-  .book__icon {
+  margin-top: -5px;
+  text-align: center; }
+  .cta:hover {
+    text-decoration: none;
+    color: #fff; }
+  .cta__icon {
     background: url(../img/order.png);
     width: 21px;
     height: 17px;
@@ -48,7 +55,7 @@ h1, .title__heading, .title__desc, .phone__digits {
   background: url(../img/first-bg.jpg) no-repeat center top; }
 
 .title {
-  padding: 215px 0; }
+  padding: 210px 0; }
   .title__heading {
     font-size: 56px;
     color: #fff; }
@@ -83,3 +90,23 @@ h1, .title__heading, .title__desc, .phone__digits {
     font-size: 32px;
     color: #14141d;
     margin: -5px 0 0 42px; }
+
+.about {
+  padding: 65px 0 100px; }
+
+.history {
+  margin-top: 60px; }
+  .history__title {
+    font-size: 35px;
+    margin-bottom: 25px; }
+  .history__text {
+    font-size: 14px; }
+  .history__button {
+    width: 148px;
+    margin-top: 48px; }
+
+.food-images__item {
+  margin-bottom: 10px; }
+
+.food-images_down {
+  margin-top: 50px; }
